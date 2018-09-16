@@ -18,6 +18,10 @@
 		E49BCA3A214DD174000E6886 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E49BCA32214DD174000E6886 /* AppDelegate.swift */; };
 		E49BCA3C214DD174000E6886 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E49BCA36214DD174000E6886 /* Assets.xcassets */; };
 		E4A1236E214DDBC30001FA48 /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1236D214DDBC30001FA48 /* Restaurant.swift */; };
+		E4A12370214DDBF20001FA48 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1236F214DDBF20001FA48 /* MainViewController.swift */; };
+		E4A12372214DDC080001FA48 /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A12371214DDC080001FA48 /* LunchViewController.swift */; };
+		E4A12374214DDC0F0001FA48 /* PubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A12373214DDC0F0001FA48 /* PubViewController.swift */; };
+		E4A12376214DDDD90001FA48 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A12375214DDDD90001FA48 /* AppTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +64,10 @@
 		E49BCA36214DD174000E6886 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E49BCA3F214DD28E000E6886 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4A1236D214DDBC30001FA48 /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		E4A1236F214DDBF20001FA48 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		E4A12371214DDC080001FA48 /* LunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
+		E4A12373214DDC0F0001FA48 /* PubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubViewController.swift; sourceTree = "<group>"; };
+		E4A12375214DDDD90001FA48 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		F2EB5FCF450DFFD6668C4161 /* Pods-PubsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PubsUITests/Pods-PubsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +198,7 @@
 		E49BCA2C214DD174000E6886 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				E4A12375214DDDD90001FA48 /* AppTheme.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -246,6 +255,7 @@
 		E4A12369214DDAF80001FA48 /* MainTabbarController */ = {
 			isa = PBXGroup;
 			children = (
+				E4A1236F214DDBF20001FA48 /* MainViewController.swift */,
 			);
 			path = MainTabbarController;
 			sourceTree = "<group>";
@@ -253,6 +263,7 @@
 		E4A1236A214DDB260001FA48 /* LunchViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E4A12371214DDC080001FA48 /* LunchViewController.swift */,
 			);
 			path = LunchViewController;
 			sourceTree = "<group>";
@@ -260,6 +271,7 @@
 		E4A1236B214DDB2F0001FA48 /* PubViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E4A12373214DDC0F0001FA48 /* PubViewController.swift */,
 			);
 			path = PubViewController;
 			sourceTree = "<group>";
@@ -275,6 +287,7 @@
 				E49BC9F1214DD061000E6886 /* Sources */,
 				E49BC9F2214DD061000E6886 /* Frameworks */,
 				E49BC9F3214DD061000E6886 /* Resources */,
+				E4A12377214DE0A70001FA48 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -448,6 +461,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		E4A12377214DE0A70001FA48 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -455,9 +486,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A12376214DDDD90001FA48 /* AppTheme.swift in Sources */,
 				E49BCA3A214DD174000E6886 /* AppDelegate.swift in Sources */,
+				E4A12372214DDC080001FA48 /* LunchViewController.swift in Sources */,
+				E4A12374214DDC0F0001FA48 /* PubViewController.swift in Sources */,
 				E456280A214DD9400082217C /* Beer.swift in Sources */,
 				E4A1236E214DDBC30001FA48 /* Restaurant.swift in Sources */,
+				E4A12370214DDBF20001FA48 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

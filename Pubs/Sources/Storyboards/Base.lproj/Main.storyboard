@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--View Controller-->
         <scene sceneID="9FC-g5-GOU">
             <objects>
                 <viewController id="ZZa-Y9-hHi" sceneMemberID="viewController">
@@ -19,13 +19,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="W9F-KF-upl"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="aYt-zk-o57"/>
+                    <tabBarItem key="tabBarItem" title="" image="eat_icon" landscapeImage="eat_icon" largeContentSizeImage="eat_icon" selectedImage="eat_icon" id="aYt-zk-o57"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyU-A4-5Gg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="535" y="321"/>
+            <point key="canvasLocation" x="1486" y="309"/>
         </scene>
-        <!--Item 1-->
+        <!--Item-->
         <scene sceneID="sI4-9C-CWF">
             <objects>
                 <viewController id="WXM-PJ-I5t" sceneMemberID="viewController">
@@ -35,11 +35,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K3d-Ug-wWj"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Z5U-mY-Bxv"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="drink_icon" landscapeImage="drink_icon" largeContentSizeImage="drink_icon" selectedImage="drink_icon" id="Z5U-mY-Bxv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQQ-bC-zu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1594" y="321"/>
+            <point key="canvasLocation" x="569" y="309"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="cWu-DY-9rV">
@@ -60,4 +60,8 @@
             <point key="canvasLocation" x="1066" y="-437"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="drink_icon" width="24" height="24"/>
+        <image name="eat_icon" width="24" height="24"/>
+    </resources>
 </document>
