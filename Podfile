@@ -5,9 +5,8 @@ target 'Pubs' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  # Pods for Pubs
-  pod 'ChameleonFramework/Swift' #MIT
-  pod 'Rxswift' #MIT
+  # Pods for Pubs  
+  pod 'RxSwift' #MIT
   pod 'RxCocoa' #MIT
   
   target 'PubsTests' do
