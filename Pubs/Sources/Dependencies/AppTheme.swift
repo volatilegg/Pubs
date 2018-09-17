@@ -83,9 +83,3 @@ enum ThemeType: ThemeProvider {
 }
 
 let themeService = ThemeType.service(initial: .light)
-
-extension UIViewController {
-    func themeLabel() {
-        
-    }
-}
