@@ -11,7 +11,7 @@ import RxCocoa
 
 extension UIViewController {
     var labels: [UILabel] {
-        return view.subviews. flatMap({ $0 }).compactMap({ $0 as? UILabel })
+        return view.getAllSubviews() as [UILabel]
     }
 
     var labelsBinding: [Binder<UIColor?>] {
@@ -30,10 +30,19 @@ class BaseViewController: UIViewController {
     }
 }
 
-extension Collection {
+extension UIView {
 
-    func recursiveFlatMap<T>() -> [T] {
-        return self
+    class func getAllSubviews<T: UIView>(view: UIView) -> [T] {
+        return view.subviews.flatMap { subView -> [T] in
+            var result = getAllSubviews(view: subView) as [T]
+            if let view = subView as? T {
+                result.append(view)
+            }
+            return result
+        }
     }
 
+    func getAllSubviews<T: UIView>() -> [T] {
+        return UIView.getAllSubviews(view: self) as [T]
+    }
 }

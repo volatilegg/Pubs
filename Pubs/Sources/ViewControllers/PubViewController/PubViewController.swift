@@ -20,6 +20,10 @@ class PubViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        themeService.rx
+        .bind({ $0.secondaryTextColor }, to: secondaryLabel.rx.textColor)
+        .disposed(by: disposeBag)
+        
         let themeSwitchVariation = themeSwitch.rx
             .value
             .observeOn(MainScheduler.instance)
