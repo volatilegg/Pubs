@@ -9,11 +9,10 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-
-public extension Reactive where Base: UILabel {
+public extension Reactive where Base: UITextField {
 
     /// Bindable sink for `font` property
-    public var font: Binder<UIFont> {
+    public var font: Binder<UIFont?> {
         return Binder(self.base) { view, attr in
             view.font = attr
         }
@@ -28,21 +27,10 @@ public extension Reactive where Base: UILabel {
         }
     }
 
-    /// Bindable sink for `highlightedTextColor` property
-    public var highlightedTextColor: Binder<UIColor?> {
+    /// Bindable sink for `keyboardAppearance` property
+    public var keyboardAppearance: Binder<UIKeyboardAppearance> {
         return Binder(self.base) { view, attr in
-            UIView.animate(withDuration: 0.3, animations: {
-                view.highlightedTextColor = attr
-            })
-        }
-    }
-
-    /// Bindable sink for `shadowColor` property
-    public var shadowColor: Binder<UIColor?> {
-        return Binder(self.base) { view, attr in
-            UIView.animate(withDuration: 0.3, animations: {
-                view.shadowColor = attr
-            })
+            view.keyboardAppearance = attr
         }
     }
 

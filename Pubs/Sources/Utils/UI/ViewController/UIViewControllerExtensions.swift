@@ -6,10 +6,8 @@
 //  Copyright © 2018 Buscu. All rights reserved.
 //
 
-import UIKit
+import RxSwift
 
 extension UIViewController {
-    public func didChangeValue<Value>(for keyPath: KeyPath<UIViewController, Value>) {
-        <#code#>
-    }
+    
 }

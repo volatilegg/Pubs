@@ -55,16 +55,19 @@ struct AppTheme {
 protocol Theme {
     var backgroundColor: UIColor { get }
     var textColor: UIColor { get }
+    var secondaryTextColor: UIColor { get }
 }
 
 struct LightTheme: Theme {
     let backgroundColor = UIColor.white
     let textColor = UIColor.black
+    let secondaryTextColor = UIColor.blue
 }
 
 struct DarkTheme: Theme {
     let backgroundColor = UIColor.black
     let textColor = UIColor.white
+    let secondaryTextColor = UIColor.gray
 }
 
 enum ThemeType: ThemeProvider {

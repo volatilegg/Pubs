@@ -3,6 +3,13 @@ excluded:
   
 disabled_rules:
   - line_length 
+  - trailing_whitespace
+
+type_name:
+  min_length: 1
+  max_lenghth: 
+    warning: 30
+    error: 45
   
 function_parameter_count:
   warning: 5
