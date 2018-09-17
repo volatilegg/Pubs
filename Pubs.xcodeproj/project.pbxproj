@@ -24,6 +24,8 @@
 		E4A12376214DDDD90001FA48 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A12375214DDDD90001FA48 /* AppTheme.swift */; };
 		E4A1237B214DE68F0001FA48 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1237A214DE68F0001FA48 /* UIViewControllerExtensions.swift */; };
 		E4A1237E214DE7940001FA48 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1237D214DE7940001FA48 /* UIColorExtensions.swift */; };
+		E4A12382214F984C0001FA48 /* UILabelRxTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A12381214F984C0001FA48 /* UILabelRxTheme.swift */; };
+		E4A12384214F98650001FA48 /* RxTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A12383214F98650001FA48 /* RxTheme.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		E4A12375214DDDD90001FA48 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
 		E4A1237A214DE68F0001FA48 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
 		E4A1237D214DE7940001FA48 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		E4A12381214F984C0001FA48 /* UILabelRxTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelRxTheme.swift; sourceTree = "<group>"; };
+		E4A12383214F98650001FA48 /* RxTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxTheme.swift; sourceTree = "<group>"; };
 		F2EB5FCF450DFFD6668C4161 /* Pods-PubsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PubsUITests/Pods-PubsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +214,7 @@
 		E49BCA2D214DD174000E6886 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E4A1237F214F98300001FA48 /* Theme */,
 				E4A12378214DE6760001FA48 /* UI */,
 			);
 			path = Utils;
@@ -304,6 +309,23 @@
 				E4A1237D214DE7940001FA48 /* UIColorExtensions.swift */,
 			);
 			path = Color;
+			sourceTree = "<group>";
+		};
+		E4A1237F214F98300001FA48 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				E4A12380214F983B0001FA48 /* Extensions */,
+				E4A12383214F98650001FA48 /* RxTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		E4A12380214F983B0001FA48 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4A12381214F984C0001FA48 /* UILabelRxTheme.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -541,6 +563,8 @@
 				E4A12374214DDC0F0001FA48 /* PubViewController.swift in Sources */,
 				E456280A214DD9400082217C /* Beer.swift in Sources */,
 				E4A1236E214DDBC30001FA48 /* Restaurant.swift in Sources */,
+				E4A12384214F98650001FA48 /* RxTheme.swift in Sources */,
+				E4A12382214F984C0001FA48 /* UILabelRxTheme.swift in Sources */,
 				E4A12370214DDBF20001FA48 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

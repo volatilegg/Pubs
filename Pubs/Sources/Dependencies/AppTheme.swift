@@ -8,7 +8,7 @@
 
 import UIKit
 
-public protocol Palette {
+/*public protocol Palette {
     var background: UIColor { get }
     var text: UIColor { get }
     var mainHighLight: UIColor { get }
@@ -49,4 +49,40 @@ public struct LightTheme: Palette {
 
 struct AppTheme {
     static let colorTheme: Palette = DarkTheme()
+}
+*/
+
+protocol Theme {
+    var backgroundColor: UIColor { get }
+    var textColor: UIColor { get }
+}
+
+struct LightTheme: Theme {
+    let backgroundColor = UIColor.white
+    let textColor = UIColor.black
+}
+
+struct DarkTheme: Theme {
+    let backgroundColor = UIColor.black
+    let textColor = UIColor.white
+}
+
+enum ThemeType: ThemeProvider {
+    case light, dark
+    var associatedObject: Theme {
+        switch self {
+        case .light:
+            return LightTheme()
+        case .dark:
+            return DarkTheme()
+        }
+    }
+}
+
+let themeService = ThemeType.service(initial: .light)
+
+extension UIViewController {
+    func themeLabel() {
+        
+    }
 }
