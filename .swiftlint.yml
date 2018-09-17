@@ -1,6 +1,9 @@
 excluded:
   - Pods
   
+disabled_rules:
+  - line_length 
+  
 function_parameter_count:
   warning: 5
   error: 10

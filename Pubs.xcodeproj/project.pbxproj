@@ -22,6 +22,8 @@
 		E4A12372214DDC080001FA48 /* LunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A12371214DDC080001FA48 /* LunchViewController.swift */; };
 		E4A12374214DDC0F0001FA48 /* PubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A12373214DDC0F0001FA48 /* PubViewController.swift */; };
 		E4A12376214DDDD90001FA48 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A12375214DDDD90001FA48 /* AppTheme.swift */; };
+		E4A1237B214DE68F0001FA48 /* UIViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1237A214DE68F0001FA48 /* UIViewControllerExtensions.swift */; };
+		E4A1237E214DE7940001FA48 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4A1237D214DE7940001FA48 /* UIColorExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		E4A12371214DDC080001FA48 /* LunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewController.swift; sourceTree = "<group>"; };
 		E4A12373214DDC0F0001FA48 /* PubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubViewController.swift; sourceTree = "<group>"; };
 		E4A12375214DDDD90001FA48 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		E4A1237A214DE68F0001FA48 /* UIViewControllerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtensions.swift; sourceTree = "<group>"; };
+		E4A1237D214DE7940001FA48 /* UIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		F2EB5FCF450DFFD6668C4161 /* Pods-PubsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PubsUITests/Pods-PubsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -206,6 +210,7 @@
 		E49BCA2D214DD174000E6886 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E4A12378214DE6760001FA48 /* UI */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -274,6 +279,31 @@
 				E4A12373214DDC0F0001FA48 /* PubViewController.swift */,
 			);
 			path = PubViewController;
+			sourceTree = "<group>";
+		};
+		E4A12378214DE6760001FA48 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E4A1237C214DE7870001FA48 /* Color */,
+				E4A12379214DE6800001FA48 /* ViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		E4A12379214DE6800001FA48 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E4A1237A214DE68F0001FA48 /* UIViewControllerExtensions.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E4A1237C214DE7870001FA48 /* Color */ = {
+			isa = PBXGroup;
+			children = (
+				E4A1237D214DE7940001FA48 /* UIColorExtensions.swift */,
+			);
+			path = Color;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -503,6 +533,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A1237E214DE7940001FA48 /* UIColorExtensions.swift in Sources */,
+				E4A1237B214DE68F0001FA48 /* UIViewControllerExtensions.swift in Sources */,
 				E4A12376214DDDD90001FA48 /* AppTheme.swift in Sources */,
 				E49BCA3A214DD174000E6886 /* AppDelegate.swift in Sources */,
 				E4A12372214DDC080001FA48 /* LunchViewController.swift in Sources */,

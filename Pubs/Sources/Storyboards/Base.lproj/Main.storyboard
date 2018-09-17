@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9QC-Vo-QPd">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Lunch View Controller-->
         <scene sceneID="9FC-g5-GOU">
             <objects>
-                <viewController id="ZZa-Y9-hHi" sceneMemberID="viewController">
+                <viewController id="ZZa-Y9-hHi" customClass="LunchViewController" customModule="Pubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="y6r-eD-y9Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,28 +23,44 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LyU-A4-5Gg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1486" y="309"/>
+            <point key="canvasLocation" x="1065" y="341"/>
         </scene>
-        <!--Item-->
+        <!--View Controller-->
+        <scene sceneID="Ne3-jS-LIJ">
+            <objects>
+                <viewController id="a6f-Sv-3xu" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="45i-Fk-qJr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Kan-Op-2aW"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="settings_icon" landscapeImage="settings_icon" largeContentSizeImage="settings_icon" selectedImage="settings_icon" id="Fre-SM-MEd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cda-wa-SZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2047" y="341"/>
+        </scene>
+        <!--Pub View Controller-->
         <scene sceneID="sI4-9C-CWF">
             <objects>
-                <viewController id="WXM-PJ-I5t" sceneMemberID="viewController">
+                <viewController id="WXM-PJ-I5t" customClass="PubViewController" customModule="Pubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bmf-9u-t3Q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="K3d-Ug-wWj"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" image="drink_icon" landscapeImage="drink_icon" largeContentSizeImage="drink_icon" selectedImage="drink_icon" id="Z5U-mY-Bxv"/>
+                    <tabBarItem key="tabBarItem" title="" image="drink_icon" landscapeImage="drink_icon" largeContentSizeImage="drink_icon" selectedImage="drink_icon" id="Z5U-mY-Bxv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nQQ-bC-zu1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="569" y="309"/>
+            <point key="canvasLocation" x="148" y="341"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Main View Controller-->
         <scene sceneID="cWu-DY-9rV">
             <objects>
-                <tabBarController id="9QC-Vo-QPd" sceneMemberID="viewController">
+                <tabBarController id="9QC-Vo-QPd" customClass="MainViewController" customModule="Pubs" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4GM-oK-zeW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -53,6 +69,7 @@
                     <connections>
                         <segue destination="WXM-PJ-I5t" kind="relationship" relationship="viewControllers" id="93D-G5-VsZ"/>
                         <segue destination="ZZa-Y9-hHi" kind="relationship" relationship="viewControllers" id="8Vn-n5-Mlv"/>
+                        <segue destination="a6f-Sv-3xu" kind="relationship" relationship="viewControllers" id="Xwt-00-lpI"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jpi-LI-w8g" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -63,5 +80,6 @@
     <resources>
         <image name="drink_icon" width="24" height="24"/>
         <image name="eat_icon" width="24" height="24"/>
+        <image name="settings_icon" width="24" height="24"/>
     </resources>
 </document>

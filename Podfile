@@ -7,7 +7,7 @@ target 'Pubs' do
 
   # Pods for Pubs  
   pod 'RxSwift' #MIT
-  pod 'RxCocoa' #MIT
+  pod 'RxCocoa', :git => 'https://github.com/ReactiveX/RxSwift', :branch => 'develop' #MIT
   
   target 'PubsTests' do
     inherit! :search_paths
