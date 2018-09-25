@@ -25,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="1065" y="341"/>
         </scene>
-        <!--View Controller-->
+        <!--Settings View Controller-->
         <scene sceneID="Ne3-jS-LIJ">
             <objects>
-                <viewController id="a6f-Sv-3xu" sceneMemberID="viewController">
+                <viewController id="a6f-Sv-3xu" customClass="SettingsViewController" customModule="Pubs" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="45i-Fk-qJr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -44,15 +44,23 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fVa-BA-9Ec">
+                                <rect key="frame" x="67" y="68" width="240" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Kan-Op-2aW"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="settings_icon" landscapeImage="settings_icon" largeContentSizeImage="settings_icon" selectedImage="settings_icon" id="Fre-SM-MEd"/>
+                    <connections>
+                        <outlet property="themeSwitch" destination="2iD-fj-rlR" id="LkK-to-NBQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cda-wa-SZQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047" y="341"/>
+            <point key="canvasLocation" x="2045.5999999999999" y="340.64039408866995"/>
         </scene>
         <!--Pub View Controller-->
         <scene sceneID="sI4-9C-CWF">
