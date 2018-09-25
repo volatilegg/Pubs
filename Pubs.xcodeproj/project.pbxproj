@@ -10,6 +10,8 @@
 		1EDC13969B5D9AD883AC0F7A /* Pods_PubsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3040811D47CA59412CD8DDC7 /* Pods_PubsUITests.framework */; };
 		705A4A54B599A4F6B22C24EA /* Pods_Pubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618EB0256DF74814BB0DDBA3 /* Pods_Pubs.framework */; };
 		8DD664E5CB59FDD63787D429 /* Pods_PubsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBEC96E1F367C949F32FE93 /* Pods_PubsTests.framework */; };
+		E4316B182159657C00EF7E57 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4316B172159657C00EF7E57 /* Log.swift */; };
+		E447DA972159579D001DC1F2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447DA962159579D001DC1F2 /* SettingsViewController.swift */; };
 		E447DC672150275E008CCB5C /* UISlider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447DC552150275D008CCB5C /* UISlider+Rx.swift */; };
 		E447DC682150275E008CCB5C /* UITabBar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447DC562150275E008CCB5C /* UITabBar+Rx.swift */; };
 		E447DC692150275E008CCB5C /* UIToolbar+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447DC572150275E008CCB5C /* UIToolbar+Rx.swift */; };
@@ -71,6 +73,8 @@
 		894B6E12420D01AE9C437EA6 /* Pods-PubsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PubsTests/Pods-PubsTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC7B03457A22B63E55A18A1A /* Pods-Pubs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pubs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pubs/Pods-Pubs.release.xcconfig"; sourceTree = "<group>"; };
 		BFBEC96E1F367C949F32FE93 /* Pods_PubsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PubsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4316B172159657C00EF7E57 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
+		E447DA962159579D001DC1F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E447DC552150275D008CCB5C /* UISlider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+Rx.swift"; sourceTree = "<group>"; };
 		E447DC562150275E008CCB5C /* UITabBar+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITabBar+Rx.swift"; sourceTree = "<group>"; };
 		E447DC572150275E008CCB5C /* UIToolbar+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIToolbar+Rx.swift"; sourceTree = "<group>"; };
@@ -164,6 +168,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E4316B162159653800EF7E57 /* Log */ = {
+			isa = PBXGroup;
+			children = (
+				E4316B172159657C00EF7E57 /* Log.swift */,
+			);
+			path = Log;
+			sourceTree = "<group>";
+		};
+		E447DA9521595781001DC1F2 /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E447DA962159579D001DC1F2 /* SettingsViewController.swift */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
 		E49BC9EC214DD061000E6886 = {
 			isa = PBXGroup;
 			children = (
@@ -217,6 +237,7 @@
 		E49BCA26214DD174000E6886 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				E4BE1B532157EDFE00490B35 /* Playgrounds */,
 				E49BCA27214DD174000E6886 /* Storyboards */,
 				E49BCA2C214DD174000E6886 /* Dependencies */,
 				E49BCA2D214DD174000E6886 /* Utils */,
@@ -248,6 +269,7 @@
 		E49BCA2D214DD174000E6886 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E4316B162159653800EF7E57 /* Log */,
 				E4A1237F214F98300001FA48 /* Theme */,
 				E4A12378214DE6760001FA48 /* UI */,
 			);
@@ -266,6 +288,7 @@
 		E49BCA2F214DD174000E6886 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				E447DA9521595781001DC1F2 /* SettingsViewController */,
 				E4A1236B214DDB2F0001FA48 /* PubViewController */,
 				E4A1236A214DDB260001FA48 /* LunchViewController */,
 				E4A12369214DDAF80001FA48 /* MainTabbarController */,
@@ -377,6 +400,13 @@
 				E447DC5D2150275E008CCB5C /* UIView+Rx.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E4BE1B532157EDFE00490B35 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Playgrounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -608,6 +638,7 @@
 			files = (
 				E4A1237E214DE7940001FA48 /* UIColorExtensions.swift in Sources */,
 				E447DC782150275E008CCB5C /* UIProgressView+Rx.swift in Sources */,
+				E4316B182159657C00EF7E57 /* Log.swift in Sources */,
 				E447DC712150275E008CCB5C /* UITextField+Rx.swift in Sources */,
 				E4A1237B214DE68F0001FA48 /* UIViewControllerExtensions.swift in Sources */,
 				E447DC6B2150275E008CCB5C /* CALayer+Rx.swift in Sources */,
@@ -629,6 +660,7 @@
 				E4A12370214DDBF20001FA48 /* MainViewController.swift in Sources */,
 				E447DC762150275E008CCB5C /* UISearchBar+Rx.swift in Sources */,
 				E447DC742150275E008CCB5C /* UISegmentControl+Rx.swift in Sources */,
+				E447DA972159579D001DC1F2 /* SettingsViewController.swift in Sources */,
 				E447DC702150275E008CCB5C /* UISwitch+Rx.swift in Sources */,
 				E447DC752150275E008CCB5C /* UITableView+Rx.swift in Sources */,
 				E447DC6C2150275E008CCB5C /* UILabel+Rx.swift in Sources */,
