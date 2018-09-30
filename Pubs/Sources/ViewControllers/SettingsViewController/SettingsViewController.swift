@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 final class SettingsViewController: BaseViewController {
 
@@ -26,6 +27,7 @@ final class SettingsViewController: BaseViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        setupThemeService()
     }
 
     // MARK: - ---------------------- Configuration & Init Methods --------------------------
@@ -41,13 +43,13 @@ final class SettingsViewController: BaseViewController {
     //
 
     private func setupThemeService() {
-        //        let themeSwitchVariation = themeSwitch.rx
-        //            .value
-        //            .observeOn(MainScheduler.instance)
-        //            .share(replay: 1)
-        //
-        //        themeSwitchVariation.bind { (value) in
-        //            themeService.set(value ? .dark : .light)
-        //        }.disposed(by: disposeBag)
+        let themeSwitchVariation = themeSwitch.rx
+            .value
+            .observeOn(MainScheduler.instance)
+            .share(replay: 1)
+
+        themeSwitchVariation.bind { (value) in
+            themeService.set(value ? .dark : .light)
+            }.disposed(by: disposeBag)
     }
 }

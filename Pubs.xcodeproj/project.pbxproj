@@ -168,6 +168,13 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		E428F03A21611AF200CC23F3 /* JSONData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = JSONData;
+			sourceTree = "<group>";
+		};
 		E4316B162159653800EF7E57 /* Log */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +321,7 @@
 		E49BCA35214DD174000E6886 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E428F03A21611AF200CC23F3 /* JSONData */,
 				E49BCA36214DD174000E6886 /* Assets.xcassets */,
 			);
 			path = Resources;
