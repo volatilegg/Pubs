@@ -6,8 +6,18 @@
 //  Copyright © 2018 Buscu. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
-class Restaurant: Codable {
+public struct Restaurant: Codable, Hashable {
+    public let id: String
+    public let name: String
+    public let coodinate: String
+    public let address: String
 
+    public init(id: String, name: String, coodinate: String, address: String) {
+        self.id = id
+        self.name = name
+        self.coodinate = coodinate
+        self.address = address
+    }
 }

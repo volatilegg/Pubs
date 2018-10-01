@@ -1,0 +1,74 @@
+[
+    {
+        "id": "kantipur",
+        "name": "Kantipur",
+        "coodinate": "60.1646309,24.933217",
+        "address": "Lönnrotinkatu 25, 00180 Helsinki"
+    },
+    {
+        "id": "koto",
+        "name": "Koto",
+        "coodinate": "60.1646808,24.9317665",
+        "address": "Lönnrotinkatu 22, 00180 Helsinki"
+    },
+    {
+        "id": "Bacco",
+        "name": "Bacco",
+        "coodinate": "60.1647667,24.9326322",
+        "address": "Lönnrotinkatu 18, 00180 Helsinki"
+    },
+    {
+        "id": "giwa",
+        "name": "Giwa",
+        "coodinate": "60.1637834,24.9329714",
+        "address": "Bulevardi 19, 00210 Helsinki"
+    },
+    {
+        "id": "indianHouse",
+        "name": "Indian House",
+        "coodinate": "60.169026,24.9342589",
+        "address": "Simonkatu 8, 00100 Helsinki"
+    },
+    {
+        "id": "bambooCenter",
+        "name": "New Bamboo Center",
+        "coodinate": "60.1679694,24.933426",
+        "address": "Annankatu 29, 00100 Helsinki"
+    },
+    {
+        "id": "kuwano",
+        "name": "Kuwano",
+        "coodinate": "60.1679357,24.9287571",
+        "address": "Malminrinne 6, 00100 Helsinki"
+    },
+    {
+        "id": "naughtyBurger",
+        "name": "NAUGHTY BRGR",
+        "coodinate": "60.1656971,24.9340702",
+        "address": "Lönnrotinkatu 13, 00120 Helsinki"
+    },
+    {
+        "id": "pompier",
+        "name": "Pompier",
+        "coodinate": "60.1654169,24.9320491",
+        "address": "Albertinkatu 29, 00180 Helsinki"
+    },
+    {
+        "id": "vibamiEerikinkatu",
+        "name": "Vibami (Eerikinkatu)",
+        "coodinate": "60.1668618,24.9324892",
+        "address": "Eerikinkatu 14, 00101 Helsinki"
+    },
+    {
+        "id": "vibamiIsoRobert",
+        "name": "Vibami (Isorobertinkatu)",
+        "coodinate": "60.1641429,24.9406278",
+        "address": "Iso Roobertinkatu 3-5, 00120 Helsinki"
+    },
+    {
+        "id": "istanbulGrilli",
+        "name": "Istanbul Grilli",
+        "coodinate": "60.1630082,24.9369803",
+        "address": "Fredrikinkatu 29, 00120 Helsinki"
+    }
+]

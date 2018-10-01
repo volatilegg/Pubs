@@ -1,0 +1,27 @@
+[
+    {
+        "officeLocation": "Lonron 18",
+        "isCurrent": true,
+        "options": [
+            "kantipur",
+            "redkoi",
+            "giwa",
+            "bacco",
+            "indianHouse",
+            "bambooCenter",
+            "kuwano",
+            "koto",
+            "naughtyBurger",
+            "pompier",
+            "vibamiEerikinkatu",
+            "istanbulGrilli",
+            "vibamiIsoRobert"
+        ]
+    },
+    {
+        "officeLocation": "ludviginkatu6",
+        "isCurrent": false,
+        "options": []
+    }
+]
+

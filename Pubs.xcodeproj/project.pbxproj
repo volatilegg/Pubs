@@ -10,6 +10,12 @@
 		1EDC13969B5D9AD883AC0F7A /* Pods_PubsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3040811D47CA59412CD8DDC7 /* Pods_PubsUITests.framework */; };
 		705A4A54B599A4F6B22C24EA /* Pods_Pubs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618EB0256DF74814BB0DDBA3 /* Pods_Pubs.framework */; };
 		8DD664E5CB59FDD63787D429 /* Pods_PubsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFBEC96E1F367C949F32FE93 /* Pods_PubsTests.framework */; };
+		E428F03C21611BFF00CC23F3 /* lunch-options.json in Resources */ = {isa = PBXBuildFile; fileRef = E428F03B21611BFF00CC23F3 /* lunch-options.json */; };
+		E428F03E21612F2100CC23F3 /* restaurants.json in Resources */ = {isa = PBXBuildFile; fileRef = E428F03D21612F2100CC23F3 /* restaurants.json */; };
+		E428F0442161362D00CC23F3 /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428F0432161362D00CC23F3 /* Place.swift */; };
+		E428F0492161470300CC23F3 /* Baconable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428F0482161470300CC23F3 /* Baconable.swift */; };
+		E428F04B2161491200CC23F3 /* RestaurantLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428F04A2161491200CC23F3 /* RestaurantLocalDataManager.swift */; };
+		E428F04D2161762900CC23F3 /* LunchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E428F04C2161762900CC23F3 /* LunchViewModel.swift */; };
 		E4316B182159657C00EF7E57 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4316B172159657C00EF7E57 /* Log.swift */; };
 		E447DA972159579D001DC1F2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447DA962159579D001DC1F2 /* SettingsViewController.swift */; };
 		E447DC672150275E008CCB5C /* UISlider+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = E447DC552150275D008CCB5C /* UISlider+Rx.swift */; };
@@ -73,6 +79,12 @@
 		894B6E12420D01AE9C437EA6 /* Pods-PubsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PubsTests/Pods-PubsTests.release.xcconfig"; sourceTree = "<group>"; };
 		AC7B03457A22B63E55A18A1A /* Pods-Pubs.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pubs.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pubs/Pods-Pubs.release.xcconfig"; sourceTree = "<group>"; };
 		BFBEC96E1F367C949F32FE93 /* Pods_PubsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PubsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E428F03B21611BFF00CC23F3 /* lunch-options.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "lunch-options.json"; sourceTree = "<group>"; };
+		E428F03D21612F2100CC23F3 /* restaurants.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = restaurants.json; sourceTree = "<group>"; };
+		E428F0432161362D00CC23F3 /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		E428F0482161470300CC23F3 /* Baconable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Baconable.swift; sourceTree = "<group>"; };
+		E428F04A2161491200CC23F3 /* RestaurantLocalDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantLocalDataManager.swift; sourceTree = "<group>"; };
+		E428F04C2161762900CC23F3 /* LunchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LunchViewModel.swift; sourceTree = "<group>"; };
 		E4316B172159657C00EF7E57 /* Log.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Log.swift; sourceTree = "<group>"; };
 		E447DA962159579D001DC1F2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		E447DC552150275D008CCB5C /* UISlider+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UISlider+Rx.swift"; sourceTree = "<group>"; };
@@ -171,8 +183,35 @@
 		E428F03A21611AF200CC23F3 /* JSONData */ = {
 			isa = PBXGroup;
 			children = (
+				E428F03D21612F2100CC23F3 /* restaurants.json */,
+				E428F03B21611BFF00CC23F3 /* lunch-options.json */,
 			);
 			path = JSONData;
+			sourceTree = "<group>";
+		};
+		E428F041216135BE00CC23F3 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				E4A1236D214DDBC30001FA48 /* Restaurant.swift */,
+				E428F0432161362D00CC23F3 /* Place.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		E428F042216135C600CC23F3 /* Pub */ = {
+			isa = PBXGroup;
+			children = (
+				E4562809214DD9400082217C /* Beer.swift */,
+			);
+			path = Pub;
+			sourceTree = "<group>";
+		};
+		E428F04521613E6E00CC23F3 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E428F0482161470300CC23F3 /* Baconable.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		E4316B162159653800EF7E57 /* Log */ = {
@@ -268,6 +307,7 @@
 		E49BCA2C214DD174000E6886 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				E428F04A2161491200CC23F3 /* RestaurantLocalDataManager.swift */,
 				E4A12375214DDDD90001FA48 /* AppTheme.swift */,
 			);
 			path = Dependencies;
@@ -276,6 +316,7 @@
 		E49BCA2D214DD174000E6886 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				E428F04521613E6E00CC23F3 /* Data */,
 				E4316B162159653800EF7E57 /* Log */,
 				E4A1237F214F98300001FA48 /* Theme */,
 				E4A12378214DE6760001FA48 /* UI */,
@@ -286,8 +327,8 @@
 		E49BCA2E214DD174000E6886 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E4562809214DD9400082217C /* Beer.swift */,
-				E4A1236D214DDBC30001FA48 /* Restaurant.swift */,
+				E428F042216135C600CC23F3 /* Pub */,
+				E428F041216135BE00CC23F3 /* Restaurant */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -339,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				E4A12371214DDC080001FA48 /* LunchViewController.swift */,
+				E428F04C2161762900CC23F3 /* LunchViewModel.swift */,
 			);
 			path = LunchViewController;
 			sourceTree = "<group>";
@@ -527,6 +569,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E49BCA37214DD174000E6886 /* LaunchScreen.storyboard in Resources */,
+				E428F03E21612F2100CC23F3 /* restaurants.json in Resources */,
+				E428F03C21611BFF00CC23F3 /* lunch-options.json in Resources */,
 				E49BCA38214DD174000E6886 /* Main.storyboard in Resources */,
 				E49BCA3C214DD174000E6886 /* Assets.xcassets in Resources */,
 			);
@@ -646,6 +690,7 @@
 			files = (
 				E4A1237E214DE7940001FA48 /* UIColorExtensions.swift in Sources */,
 				E447DC782150275E008CCB5C /* UIProgressView+Rx.swift in Sources */,
+				E428F0492161470300CC23F3 /* Baconable.swift in Sources */,
 				E4316B182159657C00EF7E57 /* Log.swift in Sources */,
 				E447DC712150275E008CCB5C /* UITextField+Rx.swift in Sources */,
 				E4A1237B214DE68F0001FA48 /* UIViewControllerExtensions.swift in Sources */,
@@ -655,10 +700,12 @@
 				E447DC682150275E008CCB5C /* UITabBar+Rx.swift in Sources */,
 				E447DC6E2150275E008CCB5C /* UITextView+Rx.swift in Sources */,
 				E49BCA3A214DD174000E6886 /* AppDelegate.swift in Sources */,
+				E428F0442161362D00CC23F3 /* Place.swift in Sources */,
 				E4A12372214DDC080001FA48 /* LunchViewController.swift in Sources */,
 				E4A12374214DDC0F0001FA48 /* PubViewController.swift in Sources */,
 				E447DC6A2150275E008CCB5C /* UINavigationBar+Rx.swift in Sources */,
 				E447DC772150275E008CCB5C /* UIPageControl+Rx.swift in Sources */,
+				E428F04D2161762900CC23F3 /* LunchViewModel.swift in Sources */,
 				E456280A214DD9400082217C /* Beer.swift in Sources */,
 				E447DC692150275E008CCB5C /* UIToolbar+Rx.swift in Sources */,
 				E4A1236E214DDBC30001FA48 /* Restaurant.swift in Sources */,
@@ -674,6 +721,7 @@
 				E447DC6C2150275E008CCB5C /* UILabel+Rx.swift in Sources */,
 				E447DC732150275E008CCB5C /* UIActivityIndicatorView+Rx.swift in Sources */,
 				E447DC672150275E008CCB5C /* UISlider+Rx.swift in Sources */,
+				E428F04B2161491200CC23F3 /* RestaurantLocalDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
